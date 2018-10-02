@@ -17,6 +17,11 @@
 		<div class="form-group">
 		<input type="text" class="form-control" name="name" value="{{ $artist->name }}">
 		</div>
+
+		<div class="form-group">
+		<input type="file" class="form-control" name="image" value="{{ $artist->image }}">
+		</div>
+
 		<button class="btn btn-primary">Save</button>
 	</form>
 </div>
