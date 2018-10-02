@@ -1,0 +1,27 @@
+Modal bootstrap 4 -> updating data (without ajax)
+
+<!-- Button trigger modal -->
+		<a href="#editArtists{{ $artist->id }}" data-toggle="modal">
+			{{ $artist->name }}
+		</a>
+
+<!-- Modal -->
+	<div class="modal fade" id="editArtists{{ $artist->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<input type="text" name="name" value="{{ $artist->name }}">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
